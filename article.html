@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <style>
+        html,
+        body {
+            min-height: 100vh;
+        }
+
+        body {
+            background-image: linear-gradient(to top, #f2bae8, #AEBAF8);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 20px 0px;
+        }
+
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #content {
+            padding: 20px;
+            width: 80%;
+        }
+        .time{
+            text-align:center;
+            color:#635a85
+        }
+        @media screen and (min-width:426px) {
+            .imgs{
+                margin:20px auto;
+                display: block;
+                height:300px;
+                width:480px;
+            }
+            h2{
+                text-align:center;
+                margin:30px;
+                color: #3c3552;
+            }
+            p {
+                font-size: 15px;
+                line-height: 25px;
+                color: #3c3552;
+            }
+        }
+        @media screen and (max-width:426px) {
+            .imgs{
+                margin:20px auto;
+                display: block;
+                height:180px;
+                width:288px;
+            }
+            h2{
+                font-size: 20px;
+                text-align:center;
+                margin:20px;
+                color: #3c3552;
+            }
+            p {
+                font-size: 15px;
+                line-height: 25px;
+                color: #3c3552;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id='container'>
+        <div id='content'>
+        </div>
+    </div>
+</body>
+<script>
+    var str = location.search.substring(4);
+    var number = Number(str);
+    console.log(number);
+    for (let i = 0; i < datas.length; i++) {
+        if (datas[i].id == number) {
+            console.log(datas[i].content);
+            var code = `<h2>${datas[i].title}</h2>
+            <p class='time'>${datas[i].time}</p>
+             <hr style=" height:6px;border:none;border-top:1px solid #185598;" />
+             <img src=${datas[i].src} alt='资讯图'  class='imgs'/>
+             <p>${datas[i].content}</p>`;
+            $('#content').html(code);
+        }
+    }
+</script>
+
+</html>

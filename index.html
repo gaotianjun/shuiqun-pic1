@@ -3,12 +3,15 @@
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>水群图-快速生成你想要的图</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css" charset="utf-8">
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/index.css" charset="utf-8">
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
 </head>
 
 <body>
@@ -27,98 +30,32 @@
             </div>
         </div>
         <div class='infBtns'>
-            <button type="button" class='infBtn' onclick="play1(4)"><b>全部</b></button>
-            <button type="button" class='infBtn' onclick="play1(1)"><b>教育咨询</b></button>
-            <button type="button" class='infBtn' onclick="play1(2)"><b>干货灵感</b></button>
-            <button type="button" class='infBtn infBtn1' onclick="play1(3)"><b>行业声音</b></button>
+            <button type="button" class='infBtn' onclick="play1(1)"><b>全部</b></button>
+            <button type="button" class='infBtn' onclick="play1('inf1')"><b>教育咨询</b></button>
+            <button type="button" class='infBtn' onclick="play1('inf2')"><b>干货灵感</b></button>
+            <button type="button" class='infBtn infBtn1' onclick="play1('inf3')"><b>行业声音</b></button>
         </div>
-        <div class='content'>
-            <div class='inf1'>
-                <div class='information'>
-                    <img src="./pic.jpg" alt='资讯图' class='imgs'>
-                    <div class='news'>
-                        <a href="http://www.w3school.com.cn">
-                            <p style='font-size: 0.9rem;'>教育咨询</p>
-                            <p style='font-size: 0.8rem;'>最新资讯简介最新资讯简介最新资讯简介最新资讯简介最新资讯简介最新资讯简介最新资讯简介最新资讯简介</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class='inf3'>
-                <div class='information'>
-                    <img src="./pic.jpg" alt='资讯图' class='imgs'>
-                    <div class='news'>
-                        <a href="http://www.w3school.com.cn">
-                            <p style='font-size: 0.9rem;'>行业声音</p>
-                            <p style='font-size: 0.8rem;'>最新资讯简介最新资讯简介最新资讯简介最新资讯简介最新资讯简介最新资讯简介最新资讯简介最新资讯简介</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class='inf2'>
-                <div class='information'>
-                    <img src="./pic.jpg" alt='资讯图' class='imgs'>
-                    <div class='news'>
-                        <a href="http://www.w3school.com.cn">
-                            <p style='font-size: 0.9rem;'>干货咨询</p>
-                            <p style='font-size: 0.8rem;'>最新资讯简介最新资讯简介最新资讯简介最新资讯简介最新资讯简介最新资讯简介最新资讯简介最新资讯简介</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class='inf3'>
-                <div class='information'>
-                    <img src="./pic.jpg" alt='资讯图' class='imgs'>
-                    <div class='news'>
-                        <a href="http://www.w3school.com.cn">
-                            <p style='font-size: 0.9rem;'>行业声音</p>
-                            <p style='font-size: 0.8rem;'>最新资讯简介最新资讯简介最新资讯简介最新资讯简介最新资讯简介最新资讯简介最新资讯简介最新资讯简介</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <div class='content' id='cont'>
 
         </div>
     </div>
 
 </body>
 <script>
-    function play() {
-        document.getElementById("money-1").style.display = "block";
-    }
-    function play1(num) {
-        if(num==4){
-            for (let n = 1; n <4; n++) {
-                var arr = document.getElementsByClassName('inf' + n);
-                for (let i = 0; i < arr.length; i++) {
-                    arr[i].style.display = 'block'
-                }
-            }
-        }
-        if(num<4){
-            for (let n = 1; n < 4; n++) {
-                if (n === num) {
-                    arr = document.getElementsByClassName('inf' + num);
-                    for (let i = 0; i < arr.length; i++) {
-                        arr[i].style.display = 'block'
-                    }
-                    continue;
-                }
-                arr = document.getElementsByClassName('inf' + n);
-                for (let i = 0; i < arr.length; i++) {
-                    arr[i].style.display = 'none'
-                }
-            }
-        }
-    }
-    function weChatPay() {
-        let money = document.getElementById("money-wechat").value;
-        let ad = document.getElementById("ad-wechat").value;
-        window.open('http://www.shuiquntu.cn/pay/weChatPay.html?money=' + money + "&ad=" + ad);
+    var data = '';
+    for (let i = 0; i < datas.length; i++) {
+        data += `<div class=${datas[i].class}>
+                    <div class='information'>
+                        <img src=${datas[i].src} alt='资讯图' class='imgs'>
+                        <div class='news'>
+                            <a href="./article.html?id=${datas[i].id}">
+                                <p style='font-size: 0.9rem;'>${datas[i].title}</p>
+                                <p style='font-size: 0.8rem;'>${datas[i].synopsis}</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>`;
+        $('.content').html(data);
     }
 </script>
-
 </html>
