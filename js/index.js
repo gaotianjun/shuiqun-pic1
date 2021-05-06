@@ -12,8 +12,8 @@ function play1(num) {
                         <img src=${datas[i].src} alt='资讯图' class='imgs'>
                         <div class='news'>
                             <a href="./article.html?id=${datas[i].id}">
-                                <p style='font-size: 0.9rem;'>${datas[i].title}</p>
-                                <p style='font-size: 0.8rem;'>${datas[i].synopsis}</p>
+                            <p class='p1'>${datas[i].title}</p>
+                            <p class='p2'>${datas[i].synopsis}</p>
                             </a>
                         </div>
                     </div>
@@ -27,8 +27,8 @@ function play1(num) {
                         <img src=${datas[i].src} alt='资讯图' class='imgs'>
                         <div class='news'>
                             <a href="./article.html?id=${datas[i].id}">
-                                <p style='font-size: 0.9rem;'>${datas[i].title}</p>
-                                <p style='font-size: 0.8rem;'>${datas[i].synopsis}</p>
+                            <p class='p1'>${datas[i].title}</p>
+                            <p class='p2'>${datas[i].synopsis}</p>
                             </a>
                         </div>
                     </div>
