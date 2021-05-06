@@ -26,7 +26,7 @@ body {
 
 @media screen and (min-width:426px) {
     html {
-        font-size: 16px
+        font-size: 15px
     }
 
     .logoBS {
@@ -36,7 +36,7 @@ body {
 
     .logoText {
         color: #FFFFFF;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         margin: 8px;
     }
 
@@ -47,7 +47,7 @@ body {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .weChatImg{
@@ -71,8 +71,8 @@ body {
     }
 
    .weBtn{
-        width: 146px;
-        height: 34px;
+        width: 150px;
+        height: 38px;
         background-color: #FFFFFF;
         border-radius: 6px;
         text-align: center;
@@ -82,8 +82,8 @@ body {
     }
 
     input {
-        width: 146px;
-        height: 34px;
+        width: 150px;
+        height: 38px;
         background-color: #FFFFFF;
         border-radius: 6px;
         text-align: center;
@@ -102,9 +102,10 @@ body {
 
     .infBtn{
         width: 115px;
-        height:26px;
+        height:30px;
         background-color: #FFFFFF;
         border:0;
+        font-size: 1rem;
         color:#706695;
         border-right: 2px solid #eee;
         
@@ -124,7 +125,7 @@ body {
         height: 100px;
         position: relative;
         top: 4px;
-        left:10px;
+        left:20px;
     }
 
     .information {
@@ -135,7 +136,7 @@ body {
 
     .news {
         width: 200px;
-        margin-left: 35px;
+        margin-left: 44px;
     }
 
 }
@@ -143,7 +144,7 @@ body {
 
 @media screen and (max-width:426px) {
     html {
-        font-size: 14.4px; 
+        font-size: 14px; 
     }
 
     .logoBS {
@@ -153,7 +154,7 @@ body {
 
     .logoText {
         color: #FFFFFF;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         margin: 10px;
     }
 
@@ -200,8 +201,8 @@ body {
         align-items: center;
     }
     .weBtn{
-        width: 130px;
-        height: 34px;
+        width: 140px;
+        height: 36px;
         background-color: #FFFFFF;
         border-radius: 6px;
         margin: 10px auto;
@@ -210,15 +211,16 @@ body {
         display: block;
         color: #706695;
         padding:0px;
+        font-size: 15px;
     }
     .btn1{
-        font-size: 14.6px;
+        font-size: 15px;
     }
     input {
         display: block;
         margin:8px;
-        width: 130px;
-        height: 34px;
+        width: 140px;
+        height: 36px;
         background-color: #FFFFFF;
         border-radius: 6px;
         text-align: center;
