@@ -4,14 +4,15 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Pragma" content="no-cache">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>水群图-快速生成你想要的图</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.css" charset="utf-8">
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/data.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    
+    
 </head>
 
 <body>
@@ -42,20 +43,10 @@
 
 </body>
 <script>
-    var data = '';
-    for (let i = 0; i < datas.length; i++) {
-        data += `<div class=${datas[i].class}>
-                    <div class='information'>
-                        <img src=${datas[i].src} alt='资讯图' class='imgs'>
-                        <div class='news'>
-                            <a href="./article.html?id=${datas[i].id}">
-                                <p class='p1'>${datas[i].title}</p>
-                                <p class='p2'>${datas[i].synopsis}</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>`;
-        $('.content').html(data);
-    }
+    var now=new Date();
+    var number = now.getYear().toString()+now.getMonth().toString()+now.getDate().toString()+now.getHours().toString()+now.getMinutes().toString()+now.getSeconds().toString();
+    document.write("\<script language=\"javascript\" type=\"text/javascript\" src=\"js/data.js?"+number+"\"><\/script\>");
+    document.write("\<script language=\"javascript\" type=\"text/javascript\" src=\"js/index.js?"+number+"\"><\/script\>");
+       
 </script>
 </html>
