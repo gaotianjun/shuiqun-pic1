@@ -1,0 +1,286 @@
+
+*:active{outline: none;}
+*:focus {outline: none;}
+html,body{ min-height: 100vh;}
+body {
+    background-image: linear-gradient(to top, #f2bae8, #AEBAF8);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:40px 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.prompt>p>a{
+    color:#8781a3
+}
+.prompt{
+    margin:10px 0px;
+}
+
+@media screen and (min-width:426px) {
+    html {
+        font-size: 15px
+    }
+
+    .logoBS {
+        width: 40%;
+        height: 40%;
+    }
+
+    .logoText {
+        color: #FFFFFF;
+        font-size: 1.3rem;
+        margin: 8px;
+    }
+
+    .weChat{
+        padding:20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .weChatImg{
+        width:22px;
+        height:22px;
+        position: relative;
+        top:-2px;
+    }
+
+    .money{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    p {
+        margin: 4px 0px;
+        color: #685f88;
+        font-weight: bold;
+    }
+    .p1{
+        font-size: 14.5px;
+        line-height: 25px;
+    }
+    .p2{
+        font-size: 13.5px;
+    }
+   .weBtn{
+        width: 150px;
+        height: 38px;
+        background-color: #FFFFFF;
+        border-radius: 6px;
+        text-align: center;
+        border-width: 0;
+        margin:auto 4px;
+        color: #706695;
+    }
+
+    input {
+        width: 150px;
+        height: 38px;
+        background-color: #FFFFFF;
+        border-radius: 6px;
+        text-align: center;
+        border-width: 0;
+        margin:auto 4px;
+        color: #706695;
+    }
+
+    .infBtns{
+        height:60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .infBtn{
+        width: 115px;
+        height:30px;
+        background-color: #FFFFFF;
+        border:0;
+        font-size: 1rem;
+        color:#706695;
+        border-right: 2px solid #eee;
+        
+    }
+    .infBtn1{
+        border:0;
+    }
+
+    .content {
+        width: 466px;
+        border: 2px dotted white;
+        border-radius: 10px;
+    }
+
+    .imgs {
+        width: 170px;
+        height: 106px;
+        position: relative;
+        top: 8px;
+        left:8px;
+    }
+
+    .information {
+        padding: 8px 12px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .news {
+        width: 240px;
+        margin-left: 24px;
+    }
+
+}
+
+
+@media screen and (max-width:426px) {
+    html {
+        font-size: 14px; 
+    }
+
+    .logoBS {
+        width: 68%;
+        height: 68%;
+    }
+
+    .logoText {
+        color: #FFFFFF;
+        font-size: 1.3rem;
+        margin: 10px;
+    }
+
+    .content {
+        width: 348px;
+        border: 2px dotted white;
+        border-radius: 10px;
+    }
+
+    .imgs {
+        width: 140px;
+        height: 100px;
+        position: relative;
+        top: 10px;
+    }
+
+    .information {
+        padding: 8px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .news {
+        width: 178px;
+        margin-left: 10px;
+    }
+
+    p {
+        margin:4px 0px;
+        color: #685f88;
+        font-weight: bold;
+    }
+    .p1{
+        font-size: 14px;
+    }
+    .p2{
+        font-size: 12px;
+    }
+    .weChatImg{
+        width:20px;
+        height:20px;
+        position: relative;
+        top:-2px;
+    }
+    .weChat{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .weBtn{
+        width: 140px;
+        height: 36px;
+        background-color: #FFFFFF;
+        border-radius: 6px;
+        margin: 10px auto;
+        text-align: center;
+        border-width: 0;
+        display: block;
+        color: #706695;
+        padding:0px;
+        font-size: 15px;
+    }
+    .btn1{
+        font-size: 15px;
+    }
+    input {
+        display: block;
+        margin:8px;
+        width: 140px;
+        height: 36px;
+        background-color: #FFFFFF;
+        border-radius: 6px;
+        text-align: center;
+        border-width: 0;
+        color: #706695;
+    }
+
+    .infBtns{
+        height:60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .infBtn{
+        width: 75px;
+        height:28px;
+        background-color: #FFFFFF;
+        border:0;
+        color:#706695;
+        border-right: 2px solid #eee;
+        font-size: 13px;
+    }
+    .infBtn1{
+        border:0;
+    }
+
+}
+
+
+.money{
+    display:none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.weBtn:active {
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+}
+
+.infBtn:active{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+}
+
