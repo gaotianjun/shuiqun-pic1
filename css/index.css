@@ -24,7 +24,7 @@ body {
     align-items: center;
 }
 .prompt>p>a{
-    color:#8781a3
+    color:rgba(255,255,255,0);
 }
 
 @media screen and (min-width:426px) {
@@ -44,7 +44,7 @@ body {
     }
 
     .weChat{
-        margin:60px 0 0 0;
+        margin:68px 0 0 0;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -85,18 +85,19 @@ body {
         border-radius: 6px;
         text-align: center;
         border-width: 0;
-        margin:auto 4px;
         color: #706695;
     }
-
+    .money{
+        margin-left:5px;
+    }
     input {
         width: 150px;
         height: 40px;
+        margin:auto 5px;
         background-color: #FFFFFF;
         border-radius: 6px;
         text-align: center;
         border-width: 0;
-        margin:auto 4px;
         color: #706695;
     }
 
@@ -211,7 +212,7 @@ body {
         top:-2px;
     }
     .weChat{
-        margin:44px 0 0 0;
+        margin:48px 0 0 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -266,7 +267,7 @@ body {
         border:0;
     }
     .prompt{
-        margin:12px 0px 25px 0px;
+        margin:10px 0px 20px 0px;
     }
 
 }

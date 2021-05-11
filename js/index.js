@@ -16,6 +16,7 @@ for (let i = 0; i<datas.length; i++) {
 
 function play() {
     document.getElementById("money-1").style.display = "block";
+    document.getElementById("prompt-p").style.color='#8781a3';
 }
 
 function play1(num) {
