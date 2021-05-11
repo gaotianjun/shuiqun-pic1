@@ -11,14 +11,13 @@
     <link rel="stylesheet" type="text/css" href="css/index.css" charset="utf-8">
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    
-    
+
 </head>
 
 <body>
     <div class='container'>
         <div class='logo'>
-            <img class="logoBS" src="./logoBS.png" alt='logo图'>
+            <img class="logoBS" src="./imgs/logoBS.png" alt='logo图'>
             <b align="center" class='logoText'>选择你要生成的样式图</b>
         </div>
         <div class='weChat'>
@@ -29,6 +28,9 @@
                 <input placeholder="主体名显示" size="10" id="ad-wechat">
                 <button type="button" class='weBtn' onclick="weChatPay()"><b>生成图片</b></button>
             </div>
+        </div>
+        <div class='prompt'>
+            <p><a href='https://xw.qq.com/amphtml/20181129004241/HTC2018112900424100'>仅供娱乐，禁止用于非法用途</a></p>
         </div>
         <div class='infBtns'>
             <button type="button" class='infBtn' onclick="play1(1)"><b>全部</b></button>
@@ -43,10 +45,11 @@
 
 </body>
 <script>
-    var now=new Date();
-    var number = now.getYear().toString()+now.getMonth().toString()+now.getDate().toString()+now.getHours().toString()+now.getMinutes().toString()+now.getSeconds().toString();
-    document.write("\<script language=\"javascript\" type=\"text/javascript\" src=\"js/data.js?"+number+"\"><\/script\>");
-    document.write("\<script language=\"javascript\" type=\"text/javascript\" src=\"js/index.js?"+number+"\"><\/script\>");
-       
+    var now = new Date();
+    var number = now.getYear().toString() + now.getMonth().toString() + now.getDate().toString() + now.getHours().toString() + now.getMinutes().toString() + now.getSeconds().toString();
+    document.write("\<script language=\"javascript\" type=\"text/javascript\" src=\"js/data.js?" + number + "\"><\/script\>");
+    document.write("\<script language=\"javascript\" type=\"text/javascript\" src=\"js/index.js?" + number + "\"><\/script\>");
+
 </script>
+
 </html>

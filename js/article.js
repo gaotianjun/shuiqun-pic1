@@ -7,7 +7,7 @@ for (let i = 0; i < datas.length; i++) {
             <p class='time'>${datas[i].time}</p>
             <hr style=" height:6px;border:none;border-top:1px solid #185598;" />
             <img src=${datas[i].src} alt='资讯图'  class='imgs'/>
-            <p>${datas[i].content}</p>`;
+            ${datas[i].content}`;
         $('#content').html(code);
     }
 }
